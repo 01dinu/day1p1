@@ -1,0 +1,155 @@
+/* Header styles */
+* {
+  font-family: Montserrat;
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #252B42;
+  margin-left: 200px;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #737373;
+  font-weight: 600;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+  
+}
+
+.nav-actions a, .nav-actions button {
+  margin-left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-actions .link {
+  text-decoration: none;
+  color: #23A6F0;
+}
+
+.link {
+  color: #23A6F0;
+  font-weight: 600;
+}
+
+/* Full-page layout */
+.hero-container {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+}
+
+/* Specific image adjustments */
+.hero-image img {
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* Make the top image larger */
+.hero-image.top-image img {
+  max-width: 100%; /* Top image larger */
+  height: 200%;
+  margin-bottom: 150px;
+}
+
+/* Make the bottom image smaller */
+.hero-image.bottom-image img {
+  max-width: 70%; /* Bottom image smaller */
+  height: auto;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  color: #23A6F0; /* Light blue */
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.btn.btn-primary {
+  background-color: white;
+  border: 2px solid #23A6F0;
+  color: #23A6F0;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.btn-primary:hover {
+  background-color: #23A6F0;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  /* Adjust image sizes for smaller screens */
+  .hero-image.top-image img {
+    max-width: 80%;
+  }
+
+  .hero-image.bottom-image img {
+    max-width: 60%;
+  }
+}
